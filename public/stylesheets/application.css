@@ -1,0 +1,241 @@
+html, body {
+  background-color: #555;
+  color: #555; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+#wrapper {
+  background: #fafafa;
+  padding-bottom: 20px; }
+
+footer {
+  padding: 20px;
+  color: #ababab;
+  font-size: 13px;
+  text-transform: uppercase; }
+  footer a {
+    color: #ababab; }
+  footer a:hover {
+    color: #fff; }
+
+ul.footerMenu li {
+  margin-left: 12px;
+  float: left; }
+
+div.bodyContent {
+  padding-top: 60px; }
+
+div.userTile {
+  background: #fdfdfd url(/images/trend_static_pos.png) no-repeat center 59px;
+  margin: 4px;
+  padding: 10px 10px;
+  width: 160px;
+  min-height: 160px;
+  text-align: center; }
+  div.userTile li.riskScore {
+    color: #c1c1c1;
+    font-size: 40px;
+    line-height: 36px; }
+  div.userTile li.trend {
+    height: 25px; }
+  div.userTile li.attitude {
+    min-height: 20px;
+    padding-top: 14px;
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase; }
+  div.userTile li.attitudeCount {
+    min-height: 24px;
+    padding-bottom: 10px;
+    color: #888;
+    font-size: 20px; }
+  div.userTile li.userName {
+    color: #888;
+    font-size: 14px; }
+  div.userTile li.department {
+    color: #aaa;
+    font-size: 12px;
+    text-transform: uppercase; }
+
+div.trendStaticNeg {
+  background: white url(/images/trend_static_neg.png) no-repeat center 59px; }
+  div.trendStaticNeg li.riskScore {
+    color: #777; }
+
+div.trendUpPos {
+  background: #fdfdfd url(/images/trend_up_pos.png) no-repeat center 59px; }
+
+div.trendDownPos {
+  background: #fdfdfd url(/images/trend_down_pos.png) no-repeat center 59px; }
+
+div.trendUpNeg {
+  background: white url(/images/trend_up_neg.png) no-repeat center 59px; }
+  div.trendUpNeg li.riskScore {
+    color: #777; }
+
+div.trendDownNeg {
+  background: white url(/images/trend_down_neg.png) no-repeat center 59px; }
+  div.trendDownNeg li.riskScore {
+    color: #777; }
+
+.shadow {
+  -moz-box-shadow: 0px 1px 2px #dddddd;
+  -webkit-box-shadow: 0px 1px 2px #dddddd;
+  box-shadow: 0px 1px 2px #dddddd;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color'); }
+
+#mapWrapper {
+  padding: 5px; }
+  #mapWrapper a {
+    color: #999;
+    font-weight: bold; }
+  #mapWrapper a:hover {
+    text-decoration: none; }
+
+#map {
+  background: #fff; }
+
+#locationRollUp {
+  background: #fdfdfd;
+  margin: 0 0 10px 0; }
+
+ul.locationRollUp {
+  margin: 0 auto;
+  border-right: 1px solid #f3f3f3;
+  border-left: 1px solid #fff;
+  width: 154px;
+  text-align: center; }
+  ul.locationRollUp li.sum {
+    padding: 10px 0;
+    color: #ababab;
+    font-size: 40px;
+    line-height: 36px; }
+  ul.locationRollUp li.locationLabel {
+    padding-bottom: 10px;
+    color: #bababa;
+    font-size: 12px;
+    text-transform: uppercase; }
+
+ul.locationRollUp:hover {
+  background-color: #c1c1c1;
+  color: #fafafa; }
+  ul.locationRollUp:hover li {
+    color: #fff; }
+
+ul.locationRollUp.active {
+  background-color: #aaa;
+  border-right: 0; }
+  ul.locationRollUp.active li {
+    color: #fafafa; }
+
+ul.locationRollUpFirst {
+  width: 157px;
+  border-left: 0px; }
+
+ul.locationRollUpLast {
+  width: 157px;
+  border-right: 0px; }
+
+#locationUsers {
+  margin-top: 10px; }
+
+#vanityWrapper {
+  margin-bottom: 25px; }
+
+ul.user_details_vanity {
+  margin-left: 20px; }
+  ul.user_details_vanity li {
+    padding-bottom: 4px; }
+  ul.user_details_vanity a {
+    text-decoration: none; }
+  ul.user_details_vanity li.username {
+    color: #777;
+    font-size: 27px; }
+  ul.user_details_vanity li.title {
+    margin-top: 5px; }
+
+ul.risk_score {
+  color: #999;
+  width: 154px; }
+  ul.risk_score li {
+    margin-bottom: 12px;
+    text-align: center; }
+  ul.risk_score li.totalScore {
+    font-size: 40px; }
+  ul.risk_score li.totalScoreLabel {
+    font-size: 12px;
+    text-transform: uppercase; }
+  ul.risk_score li.trend {
+    background: url(/images/trend_up_pos.png) no-repeat center;
+    height: 25px; }
+
+#userCompromisesWrapper {
+  margin-top: 4px; }
+
+div.compromiseHeaderWrapper {
+  background-color: #fff;
+  padding-bottom: 8px;
+  cursor: pointer; }
+  div.compromiseHeaderWrapper div.timeDate {
+    padding: 10px;
+    text-align: center; }
+  div.compromiseHeaderWrapper div.compromiseHeader {
+    padding: 10px;
+    font-weight: bold; }
+
+div.compromiseDetailsWrapper {
+  padding: 10px 0;
+  display: none; }
+  div.compromiseDetailsWrapper div.compromiseDetail {
+    padding: 5px 20px;
+    width: 270px; }
+
+div.userEventsHeader {
+  border-bottom: 1px solid #ddd; }
+  div.userEventsHeader .header {
+    padding: 5px;
+    font-weight: bold; }
+  div.userEventsHeader .date {
+    text-align: right; }
+
+div.userEventsWrapper {
+  border-bottom: 1px solid #eee; }
+  div.userEventsWrapper div.event {
+    padding: 5px; }
+  div.userEventsWrapper div.timeDate {
+    padding: 10px 5px;
+    text-align: right; }
+  div.userEventsWrapper div.score {
+    padding: 7px 0 3px;
+    color: #c1c1c1;
+    font-size: 24px;
+    text-align: center; }
+  div.userEventsWrapper div.trend {
+    background: url(/images/trend_up_pos.png) no-repeat center;
+    height: 25px; }
+  div.userEventsWrapper div.location {
+    padding: 5px; }
+
+div.eventsSeparator {
+  margin-top: 20px; }
+
+.hackWrapper {
+  border-top: 1px solid #eee; }
+
+.hackSpace {
+  margin-left: 5px; }
+
+.blue {
+  background-color: blue; }
+
+.red {
+  background-color: red; }

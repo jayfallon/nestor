@@ -1,0 +1,33 @@
+extends ../layouts/default
+
+block content
+	div.container
+		.row
+			.span12
+				//include ../includes/_users_nav
+		
+				form
+					ul#users_filter.nav.pull-right
+						input(type="text", placeholder="Search")
+
+		include ../includes/_department_vanity
+
+		.row
+			.span12
+				include ../includes/_department_details_nav
+
+		.row
+			.span12
+				div.eventsSeparator
+					include ../includes/_department_assets
+
+
+block document
+
+	include ../includes/_department_document
+
+
+	script
+		$(function(){
+			$("#locationRollUp a:nth-child(4) ul").addClass('active');
+		});

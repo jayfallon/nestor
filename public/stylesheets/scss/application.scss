@@ -1,0 +1,329 @@
+html, body{
+	background-color: #555;
+	color: #555;
+}
+
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#wrapper{
+	background: #fafafa;
+	padding-bottom: 20px;
+}
+
+footer{
+	padding: 20px;
+	color: #ababab;
+	font-size: 13px;
+	text-transform: uppercase;
+	a{
+		color: #ababab;
+	}
+	a:hover{
+		color: #fff;
+	}
+}
+
+ul.footerMenu{
+	li{
+		margin-left: 12px;
+		float: left;
+	}
+}
+
+
+div.bodyContent{
+	padding-top: 60px
+}
+
+
+div.userTile{
+	background: #FDFDFD url(/images/trend_static_pos.png) no-repeat center 59px;
+	margin: 4px;
+	padding: 10px 10px;
+	width: 160px;
+	min-height: 160px;
+	text-align: center;
+	li.riskScore{
+		color: #c1c1c1;
+		font-size: 40px;
+		line-height: 36px;
+	}
+	li.trend{
+		height: 25px;
+	}
+	li.attitude{
+		min-height: 20px;
+		padding-top: 14px;
+		color: #888;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	li.attitudeCount{
+		min-height: 24px;
+		padding-bottom: 10px;
+		color: #888;
+		font-size: 20px;
+	}
+	li.userName{
+		color: #888;
+		font-size: 14px;
+	}
+	li.department{
+		color: #aaa;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+}
+
+div.trendStaticNeg{
+	background: #FFF url(/images/trend_static_neg.png) no-repeat center 59px;
+	li.riskScore{
+		color: #777;
+	}
+}
+
+div.trendUpPos{
+	background: #FDFDFD url(/images/trend_up_pos.png) no-repeat center 59px;
+}
+
+div.trendDownPos{
+	background: #FDFDFD url(/images/trend_down_pos.png) no-repeat center 59px;
+}
+
+div.trendUpNeg{
+	background: #FFF url(/images/trend_up_neg.png) no-repeat center 59px;
+	li.riskScore{
+		color: #777;
+	}
+}
+
+div.trendDownNeg{
+	background: #FFF url(/images/trend_down_neg.png) no-repeat center 59px;
+	li.riskScore{
+		color: #777;
+	}
+}
+
+@mixin shadow($color: #333333) {
+  -moz-box-shadow: 0px 1px 2px $color;
+  -webkit-box-shadow: 0px 1px 2px $color;
+  box-shadow: 0px 1px 2px $color;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=90, Color='$color');
+}
+
+.shadow {
+  @include shadow(#ddd);
+}
+
+#mapWrapper{
+	padding: 5px;
+	a{
+		color: #999;
+		font-weight: bold;
+	}
+	a:hover{
+		text-decoration: none;
+	}
+}
+
+#map{
+	background: #fff;
+}
+
+#locationRollUp{
+	background: #fdfdfd;
+	margin: 0 0 10px 0;
+}
+
+ul.locationRollUp{
+	margin: 0 auto;
+	border-right: 1px solid #f3f3f3;
+	border-left: 1px solid #fff;
+	width: 154px;
+	text-align: center;
+	li.sum{
+		padding: 10px 0;
+		color: #ababab;
+		font-size: 40px;
+		line-height: 36px; 
+	}
+	li.locationLabel{
+		padding-bottom: 10px;
+		color: #bababa;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+}
+
+ul.locationRollUp:hover{
+	background-color: #c1c1c1;
+	li{
+		color: #fff;
+	}
+	color: #fafafa;
+}
+
+ul.locationRollUp.active{
+	background-color: #aaa;
+	border-right: 0;
+	li{
+		color: #fafafa;
+	}
+}
+
+ul.locationRollUpFirst{
+	width: 157px;
+	border-left: 0px;
+}
+
+ul.locationRollUpLast{
+	width: 157px;
+	border-right: 0px;
+}
+
+#locationUsers{
+	margin-top: 10px;
+}
+
+#vanityWrapper{
+	margin-bottom: 25px;
+}
+
+ul.user_details_vanity{
+	margin-left: 20px;
+	li{
+		padding-bottom: 4px;
+	}
+	a{
+		text-decoration: none;
+	}
+	li.username{
+		color: #777;
+		font-size: 27px;
+	}
+	li.title{
+		margin-top: 5px;
+	}
+	li.department{
+		
+	}
+	li.location{
+		
+	}
+}
+
+ul.risk_score{
+	color: #999;
+	width: 154px;
+	li{
+		margin-bottom: 12px;
+		text-align: center;
+	}
+	li.totalScore{
+		font-size: 40px;
+	}
+	li.totalScoreLabel{
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	li.trend{
+		background: url(/images/trend_up_pos.png) no-repeat center;
+		height: 25px;
+	}
+}
+
+#userCompromisesWrapper{
+	margin-top: 4px;
+}
+
+div.compromiseHeaderWrapper{
+	background-color: #fff;
+	padding-bottom: 8px;
+	cursor: pointer;
+	div.timeDate{
+		padding: 10px;
+		text-align: center;
+	}
+	div.compromiseHeader{	
+		padding: 10px;
+		font-weight: bold;
+	}
+}
+
+div.compromiseDetailsWrapper{
+	padding: 10px 0;
+	display: none;
+	div.compromiseDetail{
+		padding: 5px 20px;
+		width:270px;
+	}
+}
+
+div.userEventsHeader{
+	border-bottom: 1px solid #ddd;
+	.header{
+		padding: 5px;
+		font-weight: bold;
+	}
+	.date{
+		text-align: right;
+	}
+}
+
+div.userEventsWrapper{
+	border-bottom: 1px solid #eee;
+	div.event{
+		padding: 5px;
+	}
+	div.timeDate{
+		padding: 10px 5px;
+		text-align: right;
+	}
+	div.score{
+		padding: 7px 0 3px;
+		color: #c1c1c1;
+		font-size: 24px;
+		text-align: center
+	}
+	div.trend{
+		background: url(/images/trend_up_pos.png) no-repeat center;
+		height: 25px;
+	}
+	div.location{
+		padding: 5px;
+	}
+}
+	
+
+//refactor
+
+div.eventsSeparator{
+	margin-top: 20px;
+}
+.hackWrapper{
+	border-top: 1px solid #eee;	
+}
+
+.hackSpace{
+	margin-left: 5px
+}
+
+.blue{
+	background-color: blue
+}
+
+.red{
+	background-color: red;
+}
